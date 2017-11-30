@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index - Blog Victoriano Sevillano Vega</title>
+    <script src="js/canvasLogo.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <canvas id="micanvas">
+                Tu navegador no es compatible con canvas.
+            </canvas>
+        </a>
+        <p><a href="formulario.html">Registrar</a></p>
+    </header>  
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Novedades</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <div id="web"> 
+        <main>
+            <div id="form">
+                <h2>Registro de usuarios</h2>
+                <form name="registro" action="procesar.php" method="post">
+                    <fieldset>
+                        <legend>Datos:</legend>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" pattern="^[a-zA-ZñÑ]*$" title="Nombre de usuario" name="nombre" placeholder="Nombre" required>
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="apellidos" title="Apellidos del usuario" name="apellidos" placeholder="Primer y segundo apellido"  required>
+                        <label for="fecha_nac">Fecha de nacimiento:</label>
+                        <input type="date" title="Fecha de nacimiento" name="fecha_nac"  required>
+                        <input type="submit" name="enviar" value="Enviar">
+                        <input type="reset" name="Borrar" value="Borrar">
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        <aside>
+            <article>
+                <h3>Buscar:</h3>
+                <form action="#">
+                    <input type="search" size="20" name="buscar" id="buscar" placeholder="Buscar...">
+                </form>
+            </article>
+            <article>
+                <h2>Ultimos twits</h2>
+                <p>Nuevo agujero de seguridad en WPA2. #queGrande #segurida #informatica <br>
+                    Seguiremos informando a medida que vayamos sabiendo... </p>
+                    <p>RT:Nuevo agujero de seguridad en WPA2. #queGrande #segurida #informatica <br>
+                        Seguiremos informando a medida que vayamos sabiendo... </p>
+                    </article>
+                    <article id="publicidad">
+                        <img src="images/publi.jpg" alt="Banner publicitario">
+                        <img src="images/publi.jpg" alt="Banner publicitario">
+                        <img src="images/publi.jpg" alt="Banner publicitario">
+                        <img src="images/publi.jpg" alt="Banner publicitario">
+                    </article>
+                </aside>
+            </div>
+            <footer>
+                <p>Blog diseñado como practica de clase de Diseño de interfaces por Victoriano Sevillano Vega. 2017&copy Todos los derechos reservados. </p>
+                <div id="redes">
+                    <a href=""><img src="icons/facebook.svg" alt="Icono de red social"></a>
+                    <a href=""><img src="icons/twitter.svg" alt="Icono de red social"></a>
+                    <a href=""><img src="icons/pinterest.svg" alt="Icono de red social"></a>
+                    <a href=""><img src="icons/google.svg" alt="Icono de red social"></a>
+                </div>
+            </footer>
+        </body>
+        </html>

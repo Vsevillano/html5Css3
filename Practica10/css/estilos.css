@@ -1,0 +1,281 @@
+* {
+    *border: 1px solid;
+}
+
+/**
+* Estilos generales
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+hr {
+    width: 80%;
+    margin-top: 5%;
+}
+
+canvas {
+    max-height: 80px;
+}
+
+/**
+* Header
+*/
+header {
+    display: flex;
+    background-color: black;
+    justify-content: space-between;  
+}
+
+header p {
+    display: flex;
+    text-align: right;
+    margin-right: 1%;
+}
+
+/**
+* Nav
+*/
+nav{
+    display: flex;
+    justify-content: center;   
+    background-color: rgb(18, 18, 128);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
+
+nav ul{
+    width: 70%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: flex;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background-color: rgb(18, 18, 128);
+    
+}
+
+nav ul li a {
+    border-radius: 5px;
+    
+    font-size: 1.1rem;
+    padding: 0.5em;
+    text-decoration: none;  
+    min-width: 100px;
+    color: white;
+    background: rgb(71, 46, 182);
+}
+
+nav ul li a:hover {
+    background-color: rgb(79, 132, 202);
+    transform: scale(1.1);
+}
+
+/**
+* id banner
+*/ 
+#banner {
+background-image: url("../images/banner.jpg");
+height: 200px;
+text-align: center;
+line-height: 200px;
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#banner h2 {
+    display: inline;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 4px 5px black;
+}
+
+/**
+* div web
+*/
+#web {
+    display: grid;
+    grid-template-columns: 80% 1fr;
+}
+
+/**
+* Clase bienvenido
+*/
+.bienvenido {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+}
+
+.bienvenido p {
+    font-size: 1.1rem;
+    padding-left: 10%;     
+}
+
+.bienvenido h2{
+    text-align: center;
+}
+
+.bienvenido img {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    margin: 8%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.bienvenido img:hover {
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transition-delay: 0ms;
+    transform: rotate(360deg);
+}
+
+/**
+* Clase blog
+*/
+.blog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5%;
+}
+
+.blog article{
+    width: 100%;
+    margin-bottom: 2%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1); 
+}
+
+.blog>h2 {
+    font-size: 1.7rem;
+}
+
+.blog article h2 {
+    padding-left: 2%;
+}
+
+.blog article p {
+    padding-left: 2%;
+}
+
+.blog article:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/**
+* aside
+*/
+aside {
+    margin-top: 4%;
+    display: grid;
+    grid-auto-rows: 10% 30% 60%;
+    grid-gap: 10%;
+}
+
+aside p {
+    margin: 5% 0 5% 0;
+}
+
+
+/**
+* div publicidad
+*/
+#publicidad {
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+
+#publicidad img {
+    border: 1px solid;
+}
+
+/**
+* div form
+*/
+#form h2 {
+    display: flex;
+    text-align: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2% 0 10% 0;
+}
+
+#form form {
+    width: 40%;
+}
+
+#form form label{
+    display: flex;
+    margin: 4%;  
+}
+
+#form form input{
+    display: flex;
+    margin: 4%;  
+}
+
+input:required {
+	border: 1px solid blue;
+}
+
+input:required:valid {
+	border: 1px solid green;
+}
+
+input:required:invalid {
+	border: 1px solid red;
+}
+
+input:required:not(:focus) {
+    border: 1px solid rgb(187, 185, 185);
+}
+
+#form input[type="submit"] {
+    display: inline;
+}
+
+#form input[type="reset"] {
+    display: inline;
+}
+
+/**
+* Footer
+*/
+footer {
+    justify-content: center;
+    margin-top: 5%;
+    background-color: rgb(18, 18, 128);
+    border: 2px solid black;
+}
+
+footer p {
+    display: block;
+    width: 100%;
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+footer img {
+    height: 50px;
+    width: 50px;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+
+#redes {
+    display: grid;
+    grid-template-columns: repeat(4, 5%);
+    justify-content: center;
+}
